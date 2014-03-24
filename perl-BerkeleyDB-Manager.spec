@@ -21,6 +21,7 @@ BuildRequires:	perl(Test::TempDir)
 BuildRequires:	perl(Test::use::ok)
 BuildRequires:	perl(File::NFSLock)
 BuildRequires:	perl(namespace::clean)
+BuildRequires:	perl(namespace::autoclean)
 BuildArch:	noarch
 
 %description
@@ -43,14 +44,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-%changelog
-* Sun Apr 17 2011 Funda Wang <fwang@mandriva.org> 0.120.0-2mdv2011.0
-+ Revision: 654223
-- rebuild for updated spec-helper
-
-* Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.120.0-1mdv2011.0
-+ Revision: 625086
-- import perl-BerkeleyDB-Manager
-
