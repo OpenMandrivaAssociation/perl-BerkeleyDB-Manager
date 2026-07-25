@@ -2,14 +2,14 @@
 %define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	General purpose L<BerkeleyDB> wrapper
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/BerkeleyDB/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/BerkeleyDB-Manager
+Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/BerkeleyDB-Manager-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
