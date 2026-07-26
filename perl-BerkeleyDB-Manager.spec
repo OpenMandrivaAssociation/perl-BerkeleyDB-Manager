@@ -1,15 +1,13 @@
 %define upstream_name    BerkeleyDB-Manager
-%define upstream_version 0.12
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.12
+Release:	7
 
 Summary:	General purpose L<BerkeleyDB> wrapper
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/BerkeleyDB-Manager
-Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/BerkeleyDB-Manager-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/BerkeleyDB-Manager-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ BuildArch:	noarch
 This object provides a convenience wrapper for the BerkeleyDB manpage
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
